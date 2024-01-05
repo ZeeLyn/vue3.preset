@@ -14,7 +14,7 @@
     },
     "configs": {
         "vue": {
-            "publicPath": "/app/",
+            "publicPath": "",
             "productionSourceMap": false
         }
     },
