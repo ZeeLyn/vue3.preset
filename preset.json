@@ -1,0 +1,22 @@
+{
+    "useConfigFiles": true,
+    "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-router": {
+            "historyMode": false
+        },
+        "@vue/cli-plugin-eslint": {
+            "config": "base",
+            "lintOn": [
+                "save"
+            ]
+        }
+    },
+    "configs": {
+        "vue": {
+            "publicPath": "/app/",
+            "productionSourceMap": false
+        }
+    },
+    "vueVersion": "3"
+}
