@@ -21,5 +21,5 @@ function traverse_dir_files(dir = "") {
     });
 }
 traverse_dir_files();
-
+fs.writeFileSync(path.join(path.resolve("./src"), "preload_assets.js"), "export default [" + data.join(",") + "];", { encoding: "utf8" });
 console.log(data);
