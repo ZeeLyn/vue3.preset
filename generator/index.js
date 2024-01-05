@@ -15,7 +15,7 @@ module.exports = (api) => {
             gen_preload_assets: "node gen_preload_assets_array.js",
         },
     });
-    const deleteFiles = ["src/components/HelloWorld.vue", "src/assets/logo.png", "public/favicon.ico"];
+    const deleteFiles = ["src/components/HelloWorld.vue", "public/favicon.ico"];
     api.render((files) => {
         Object.keys(files)
             .filter((path) => {
