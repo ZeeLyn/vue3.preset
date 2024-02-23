@@ -1,5 +1,5 @@
 <template>
-    <video ref="player-container" class="player-container" :style="`width:100%; height:100%;`" preload="auto" webkit-playsinline="true" crossorigin="anonymous" playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5-page"></video>
+    <video ref="player-container" class="player-container" style="width: 100%; height: 100%" preload="auto" webkit-playsinline="true" crossorigin="anonymous" playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5-page"></video>
 </template>
 <script>
 import TCPlayer from "tcplayer.js";
@@ -51,7 +51,6 @@ export default {
             playbackRates: [],
         };
         this.playerOptions = Object.assign({}, def_options, this.options);
-        console.log(this.playerOptions);
         const player = (this.player = TCPlayer(this.$refs["player-container"], this.playerOptions));
         player.ready(function () {
             var btnContainer = document.createElement("button");

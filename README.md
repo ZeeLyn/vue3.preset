@@ -1,2 +1,4 @@
-# vue3.preset
- vue3.preset
+```powershell
+
+vue create --preset zeelyn/vue3.preset app
+```
