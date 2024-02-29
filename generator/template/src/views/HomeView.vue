@@ -1,8 +1,8 @@
 <template>
     <div class="home">
-        <img src="@/assets/bgm.png" @click="bgmHandler" v-if="store.bgmStatus" />
+        <!-- <img src="@/assets/bgm.png" @click="bgmHandler" v-if="store.bgmStatus" />
         <img src="@/assets/bgm-off.png" @click="bgmHandler" v-if="!store.bgmStatus" />
-        <img alt="Vue logo" src="../assets/logo.png" />
+        <img alt="Vue logo" src="../assets/logo.png" /> -->
         <button @click="showlive = true">开始直播</button>
         <div class="player-wrap">
             <TCPlayer v-if="showlive" :options="options"></TCPlayer>
