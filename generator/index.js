@@ -1,6 +1,9 @@
 module.exports = (api) => {
     api.render("./template");
     api.extendPackage({
+        scripts: {
+            "build:test": "vue-cli-service build --mode test",
+        },
         dependencies: {
             "@zeelyn/http": "^1.0.2",
             "@zeelyn/vue-ui": "^2.0.2",
