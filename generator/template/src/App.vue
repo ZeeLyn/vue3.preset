@@ -69,7 +69,10 @@ li {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #333;
-    background: #ccc;
+}
+img {
+    max-width: 100%;
+    display: block;
 }
 
 @media screen and (min-aspect-ratio: 58/100) {
